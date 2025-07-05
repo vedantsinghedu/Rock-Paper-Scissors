@@ -19,14 +19,14 @@ function pickComputerMove(){
   let computerMove='';
   randomNumber=Math.random();
   if(randomNumber>=0 && randomNumber<1/3){
-    computerMove='rock';
+    computerMove='Rock';
 
   }
   else if(randomNumber>=2/3){
-    computerMove='paper';
+    computerMove='Paper';
   }
   else{
-  computerMove='scissors';
+  computerMove='Scissors';
   }
   return computerMove;
 }
@@ -35,37 +35,37 @@ function function2(playerMove){
   const computerMove=pickComputerMove();
 
   let result ='';
-  if(playerMove==='scissors'){
-    if(computerMove==='rock'){
+  if(playerMove==='Scissors'){
+    if(computerMove==='Rock'){
       result='You Lost...';
     }
-    else if(computerMove=='paper'){
+    else if(computerMove=='Paper'){
       result='You Win...';
     }
-    else if(computerMove=='scissors'){
+    else if(computerMove=='Scissors'){
       result='Tie...';
     }
   }
 
-  else if(playerMove=="paper"){
-    if(computerMove==='rock'){
+  else if(playerMove=="Paper"){
+    if(computerMove==='Rock'){
     result='You Win...';
     }
-    else if(computerMove=='paper'){
+    else if(computerMove=='Paper'){
       result='Tie...';
     }
-    else if(computerMove=='scissors'){
+    else if(computerMove=='Scissors'){
       result='You Lost...';
     }
   }
-  else if(playerMove=='rock'){
-    if(computerMove==='rock'){
+  else if(playerMove=='Rock'){
+    if(computerMove==='Rock'){
     result='Tie...';
     }
-    else if(computerMove=='paper'){
+    else if(computerMove=='Paper'){
     result='You Lost...';
     }
-    else if(computerMove=='scissors'){
+    else if(computerMove=='Scissors'){
       result='You Win...';
     }
   }
