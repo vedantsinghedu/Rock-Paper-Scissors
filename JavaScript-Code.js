@@ -88,8 +88,8 @@ function function2(playerMove){
 
   document.querySelector('.js-moves')
   .innerHTML=`<span class="label">YOU</span>  
-  <img src="images/${playerMove}-emoji.png" class="move-icon">
-  <img src="images/${computerMove}-emoji.png" class="move-icon">  
+  <img src="images/${playerMove.toLowerCase()}-emoji.png" class="move-icon">
+  <img src="images/${computerMove.toLowerCase()}-emoji.png" class="move-icon">  
   <span class="label">COMPUTER</span>`;
 
 
